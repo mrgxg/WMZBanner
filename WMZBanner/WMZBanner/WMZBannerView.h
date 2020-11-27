@@ -13,6 +13,9 @@ NS_ASSUME_NONNULL_BEGIN
 //背景图
 @property(strong,nonatomic)UIImageView *bgImgView;
 
+//卡片collection
+@property(strong,nonatomic,readonly) UICollectionView *myCollectionV;
+
 /**
  *  调用方法
  *
