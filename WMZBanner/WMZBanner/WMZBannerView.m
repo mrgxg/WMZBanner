@@ -67,6 +67,10 @@
     [self resetCollection];
 }
 
+- (void)justReloadData{
+    self.data = [NSArray arrayWithArray:self.param.wData];
+    [self.myCollectionV reloadData];
+}
 
 - (void)resetCollection{
     self.bannerControl.numberOfPages = self.data.count;

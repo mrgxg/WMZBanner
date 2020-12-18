@@ -40,6 +40,9 @@ NS_ASSUME_NONNULL_BEGIN
 */
 - (void)scrolToPath:(NSIndexPath*)path animated:(BOOL)animated;
 
+
+- (void)justReloadData;
+
 @end
 
 @interface Collectioncell : UICollectionViewCell
