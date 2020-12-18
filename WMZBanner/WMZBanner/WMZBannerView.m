@@ -72,6 +72,10 @@
     [self.myCollectionV reloadData];
 }
 
+- (void)updateRepeat:(BOOL)repeat{
+    self.param.wRepeat = repeat;
+}
+
 - (void)resetCollection{
     self.bannerControl.numberOfPages = self.data.count;
     self.bannerControl.hidden = self.param.wHideBannerControl;
