@@ -636,6 +636,17 @@
     }
 }
 
+
+- (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event{
+    if (self.param.wOnlyCenterResponseEnvent) {
+        CGPoint po = [self convertPoint:point fromView:self];
+        if (po.y >= self.param.wItemSize.height) {
+            return self.myCollectionV;
+        }
+    }
+    return [super hitTest:point withEvent:event];
+}
+
 @end
 
 @implementation Collectioncell

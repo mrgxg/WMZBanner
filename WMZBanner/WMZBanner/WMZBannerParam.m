@@ -98,6 +98,7 @@ WMZBannerParam * BannerParam(void){
         _wCardOverLapCount = 4;
         _wCardOverMinAlpha = 0.1;
         _wCustomImageRadio = 5.0f;
+        _wOnlyCenterResponseEnvent = true;
     }
     return self;
 }

@@ -127,6 +127,10 @@ WMZBannerPropStatementAndPropSetFuncStatement(copy,   WMZBannerParam, BannerCent
 WMZBannerPropStatementAndPropSetFuncStatement(copy,   WMZBannerParam, BannerScrollEndBlock, wEventScrollEnd)
 //正在滚动
 WMZBannerPropStatementAndPropSetFuncStatement(copy,   WMZBannerParam, BannerScrollBlock,    wEventDidScroll)
+
+//只有中间的可以响应事件 默认true
+WMZBannerPropStatementAndPropSetFuncStatement(assign, WMZBannerParam, BOOL,  wOnlyCenterResponseEnvent)
+
 /* =========================================Events==============================================*/
 
 /* =========================================custom==============================================*/
